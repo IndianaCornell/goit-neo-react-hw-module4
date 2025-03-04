@@ -8,9 +8,7 @@ const SearchBar = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchRequest = e.target.elements.search.value.trim();
-    if (searchRequest) {
-      onSubmit(searchRequest);
-    } else {
+    if (!searchRequest) {
       toast.error("Fill the search field.");
       return;
     }

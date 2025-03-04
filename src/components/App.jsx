@@ -61,6 +61,10 @@ function App() {
     setSelectedImage(null);
   };
 
+  const handleLoadMore = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
+
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
@@ -69,7 +73,7 @@ function App() {
       <ImageGallery photos={photos} onImageClick={handleImageClick} />
       {loading && <Loader />}
       {photos.length > 0 && photos.length % 9 === 0 && (
-        <LoadMoreBtn page={page} setPage={setPage} />
+        <LoadMoreBtn onLoadMore={handleLoadMore} />
       )}
       <ImageModal
         isOpen={isModalOpen}

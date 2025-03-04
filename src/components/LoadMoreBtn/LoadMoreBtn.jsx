@@ -1,13 +1,9 @@
 import React from "react";
 
-const LoadMoreBtn = ({ page, setPage }) => {
-  const handleLoadMore = () => {
-    setPage((prevPage) => prevPage + 1);
-  };
-
+const LoadMoreBtn = ({ onLoadMore }) => {
   return (
     <div>
-      <button onClick={handleLoadMore}>Load More</button>
+      <button onClick={onLoadMore}>Load More</button>
     </div>
   );
 };
