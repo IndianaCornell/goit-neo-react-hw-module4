@@ -1,0 +1,9 @@
+.photo_gallery_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.photo_gallery_item {
+  width: calc((100% - 80px) / 3);
+}

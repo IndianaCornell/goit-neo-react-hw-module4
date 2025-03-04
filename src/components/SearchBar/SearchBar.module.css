@@ -1,0 +1,50 @@
+.photo_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05); /* Легка прозорість */
+  border-radius: 12px;
+  backdrop-filter: blur(8px); /* Додає ефект скла */
+}
+
+.photo_input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1); /* Напівпрозоре сіре */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.photo_input::placeholder {
+  color: rgba(200, 200, 200, 0.6);
+}
+
+.photo_input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(200, 200, 200, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.photo_button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: rgba(100, 100, 100, 0.3);
+  border: 1px solid rgba(150, 150, 150, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.photo_button:hover {
+  background: rgba(180, 180, 180, 0.2);
+  border-color: rgba(200, 200, 200, 0.6);
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.2);
+}
